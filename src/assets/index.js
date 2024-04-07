@@ -7,19 +7,16 @@ import star from "./features/star.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import five from "./badges/five.png";
-import ten from "./badges/ten.png";
-import twenty from "./badges/20.png";
-import thirty from "./badges/30.png";
-import happy from "./badges/happy-hour.png";
-import night from "./badges/night-owl.png";
-import brunch from "./badges/brunch.png";
-import favorite from "./badges/favorite.png";
-import regular from "./badges/regular.png";
-import whiskey from "./badges/whiskey.png";
-import gin from "./badges/gin.png";
-import rum from "./badges/rum.png";
-import vodka from "./badges/vodka.png";
+import blender from "./tech/blender.png";
+import css from "./tech/css.png";
+import git from "./tech/git.png";
+import html from "./tech/html.png";
+import js from "./tech/javascript.png";
+import mongo from "./tech/mongodb.png";
+import node from "./tech/nodejs.png";
+import react from "./tech/reactjs.png";
+import tailwind from "./tech/tailwind.png";
+import three from "./tech/three.js2.png";
 
 import meta from "./profile/meta.png";
 import shopify from "./profile/shopify.png";
@@ -35,19 +32,16 @@ export {
   heart,
   menu,
   close,
-  five,
-  ten,
-  twenty,
-  thirty,
-  happy,
-  night,
-  brunch,
-  favorite,
-  regular,
-  whiskey,
-  gin,
-  rum,
-  vodka,
+  blender,
+  css,
+  git,
+  html,
+  js,
+  mongo,
+  node,
+  react,
+  tailwind,
+  three,
   meta,
   shopify,
   starbucks,

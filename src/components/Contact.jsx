@@ -7,50 +7,50 @@ import { slideIn } from '../utils/motion';
 
 const Contact = () => {
   const formRef = useRef();
-  const [form, setForm] = useState({
-    email: '', 
-    password: '', 
-    firstName: '', 
-    lastName: '',
-    username: '',
-    confirmPassword: '',
-  });
+  // const [form, setForm] = useState({
+  //   email: '', 
+  //   password: '', 
+  //   firstName: '', 
+  //   lastName: '',
+  //   username: '',
+  //   confirmPassword: '',
+  // });
   const [showFields, setShowFields] = useState(false);
   // const [addUser] = useMutation(ADD_USER);
   const [loading, setLoading] = useState(false);
 
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
+  // const handleFormSubmit = async (event) => {
+  //   event.preventDefault();
 
-    if (formState.password !== formState.confirmPassword) {
-        alert('Password and Confirm Password must match.');
-        return;
-    }
+  //   if (formState.password !== formState.confirmPassword) {
+  //       alert('Password and Confirm Password must match.');
+  //       return;
+  //   }
 
-    const mutationResponse = await addUser({
-      variables: {
-        email: formState.email,
-        password: formState.password,
-        firstName: formState.firstName,
-        lastName: formState.lastName,
-        username: formState.username, 
-      },
-    });
-    const token = mutationResponse.data.addUser.token;
-    Auth.login(token);
-  };
+  //   const mutationResponse = await addUser({
+  //     variables: {
+  //       email: formState.email,
+  //       password: formState.password,
+  //       firstName: formState.firstName,
+  //       lastName: formState.lastName,
+  //       username: formState.username, 
+  //     },
+  //   });
+  //   const token = mutationResponse.data.addUser.token;
+  //   Auth.login(token);
+  // };
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
-  };
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setFormState({
+  //     ...formState,
+  //     [name]: value,
+  //   });
+  // };
 
-  const toggleShowFields = () => {
-    setShowFields(!showFields);
-  };
+  // const toggleShowFields = () => {
+  //   setShowFields(!showFields);
+  // };
 
   return (
     <div id="contact" className='xl:mt-12 xl:flex-row flex-col flex gap-10 overflow-hidden'>
@@ -61,7 +61,42 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Want to know more?</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
 
-        <form
+        <div className="mt-12 flex flex-col gap-8">
+          <div className='flex flex-col'>
+            <p className={styles.sectionSubText}>Email: larissa.bierly@gmail.com</p>
+          </div>
+
+          <div className='flex flex-col'>
+            <p className={styles.sectionSubText}>Linkedin:</p>
+            {/* <p className='text-white font-medium mb-4'>https://www.linkedin.com/in/larissa-bierly-323b06302/</p> */}
+          </div>
+
+          <div className='flex flex-row sm:block justify-center'>
+            <button
+              type="submit"
+              className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
+            >
+              <a href="https://www.linkedin.com/in/larissa-bierly-323b06302/">Go!</a>
+            </button>
+          </div>
+
+          <div className='flex flex-col'>
+            <p className={styles.sectionSubText}>Or view my github here!</p>
+          </div>
+
+          <div className='flex flex-row sm:block justify-center'>
+            <button
+              type="link"
+              className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
+            >
+              <a href="https://github.com/larsly">larsly</a>
+            </button>
+          </div>
+
+        </div>
+
+
+        {/* <form
           ref={formRef}
           onSubmit={handleFormSubmit}
           className="mt-12 flex flex-col gap-8"
@@ -111,7 +146,7 @@ const Contact = () => {
               Go!
             </button>
           </div>
-        </form>
+        </form> */}
       </motion.div>
 
       <motion.div
