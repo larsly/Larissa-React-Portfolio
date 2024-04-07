@@ -34,13 +34,13 @@ const About = () => {
     <div id="about">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Welcome!</p>
-        <h2 className={styles.sectionHeadText}>Our Features</h2>
+        <h2 className={styles.sectionHeadText}>About</h2>
       </motion.div>
 
       <motion.p 
       variants={fadeIn("", "", 0.1, 1)}
       className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Discover and share your favorite cocktails from your favorite places! Rate and review your drinks while keeping track of what you've had and where. See what your friends are up to and comment on their reviews. Collect badges along the way!
+       I'm a web developer located in Richmond, VA with experience in Javascript and frameworks like React, Node.js, and Three.js. I'm currently open to opportunities and eager to learn as much as I can about this industry. My long time experience as a bartender has left me with a voracity for conversation so please feel free to reach out!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

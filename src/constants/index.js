@@ -47,19 +47,19 @@ const ballLogo = [
 
 const services = [
   {
-    title: "Rate & Review",
+    title: "Web Developer",
     icon: star,
   },
   {
-    title: "Collect Badges",
+    title: "Content Creator",
     icon: badge,
   },
   {
-    title: "Find New Cocktails",
+    title: "Bartender",
     icon: cocktail,
   },
   {
-    title: "Connect With Friends",
+    title: "People Person",
     icon: heart,
   },
 ];

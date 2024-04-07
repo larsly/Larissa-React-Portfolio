@@ -1,4 +1,4 @@
-import logo from "./logos/n-logo-transp.png";
+import logo from "./logos/lb-logo.png";
 import iconLogo from "./logos/n-icon-transp.png"
 import cocktail from "./features/cocktail.png";
 import badge from "./features/medal.png";
