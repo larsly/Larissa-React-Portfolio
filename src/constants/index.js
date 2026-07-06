@@ -44,15 +44,15 @@ const ballLogo = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: star,
-  },
-  {
-    title: "Content Creator",
+    title: "Software Engineer",
     icon: badge,
   },
   {
-    title: "Bartender",
+    title: "UI Developer",
+    icon: star,
+  },
+  {
+    title: "Hospitality Professional",
     icon: cocktail,
   },
   {

@@ -31,7 +31,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <div id="about">
+    <div id="about" className="scroll-mt-20">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Welcome!</p>
         <h2 className={styles.sectionHeadText}>About</h2>
@@ -40,7 +40,9 @@ const About = () => {
       <motion.p 
       variants={fadeIn("", "", 0.1, 1)}
       className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-       I'm a web developer located in Richmond, VA with experience in Javascript and frameworks like React, Node.js, and Three.js. I'm currently open to opportunities and eager to learn as much as I can about this industry. My long time experience as a bartender has left me with a voracity for conversation so please feel free to reach out!
+      I’m a web developer and bartender based in Richmond, VA. I’ve spent over 10 years in the service industry and have been coding for about 3 years, including 2 years of professional development experience.
+
+My problem-solving mindset makes learning new things exciting, and software development constantly provides new challenges to tackle. I enjoy building thoughtful, user-focused experiences and collaborating with others to create tools that make people’s work and lives easier.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

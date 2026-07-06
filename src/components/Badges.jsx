@@ -7,7 +7,7 @@ import { styles } from '../styles';
 
 const Badges = () => {
   return (
-    <div id="tech">
+    <div id="tech" className="scroll-mt-20">
       <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>Technologies</h2>
       </motion.div>
